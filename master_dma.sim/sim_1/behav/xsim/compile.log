@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_dma
+INFO: [VRFC 10-311] analyzing module SYNC_FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sim_1/new/dma_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_dma_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

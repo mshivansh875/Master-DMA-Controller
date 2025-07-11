@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May  9 23:10:53 2025
+# Process ID: 20044
+# Current directory: G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16268 G:\My Drive\engineering\Digital Electronics\ichip\master_dma\master_dma\master_dma.xpr
+# Log file: G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/vivado.log
+# Journal file: G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Mac/Home/Documents/vlsi/master_dma' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 774.410 ; gain = 170.945
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Fri May  9 23:12:56 2025] Launched synth_1...
+Run output will be captured here: G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May  9 23:13:53 2025] Launched impl_1...
+Run output will be captured here: G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'master_dma_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj master_dma_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_dma
+INFO: [VRFC 10-311] analyzing module SYNC_FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sim_1/new/dma_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_dma_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 828.320 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 19cfcaea93d34e6ab5a47072a1c21915 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot master_dma_tb_behav xil_defaultlib.master_dma_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SYNC_FIFO
+Compiling module xil_defaultlib.master_dma
+Compiling module xil_defaultlib.master_dma_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot master_dma_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source G:/My -notrace
+couldn't read file "G:/My": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Fri May  9 23:14:51 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 828.320 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "master_dma_tb_behav -key {Behavioral:sim_1:Functional:master_dma_tb} -tclbatch {master_dma_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source master_dma_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/master_dma_tb/memory" to the wave window because it has 131072 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Starting DMA controller simulation
+Time=0, ARVALID=x, ARREADY=0, RVALID=0, RREADY=x, AWVALID=x, AWREADY=0, WVALID=x, WREADY=0, BVALID=0, BREADY=x, done=x
+Time=5000, ARVALID=0, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+BEFORE DMA TRANSFER:
+Memory contents from 0x00001000:
+  0x00001000: 0xaabbccdd
+  0x00001004: 0x11223344
+  0x00001008: 0x55667788
+  0x0000100c: 0x99aabbcc
+Memory contents from 0x00002000:
+  0x00002000: 0x00000000
+  0x00002004: 0x00000000
+  0x00002008: 0x00000000
+  0x0000200c: 0x00000000
+INFO: Starting DMA transfer from 0x00001000 to 0x00002000, length= 4
+Time=65000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=76000, ARVALID=1, ARREADY=1, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=85000, ARVALID=0, ARREADY=1, RVALID=0, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=86000, ARVALID=0, ARREADY=0, RVALID=0, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=96000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=105000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=115000, ARVALID=1, ARREADY=0, RVALID=1, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=116000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=125000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=126000, ARVALID=1, ARREADY=1, RVALID=0, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=135000, ARVALID=0, ARREADY=1, RVALID=0, RREADY=1, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=136000, ARVALID=0, ARREADY=0, RVALID=0, RREADY=1, AWVALID=1, AWREADY=1, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=145000, ARVALID=0, ARREADY=0, RVALID=0, RREADY=1, AWVALID=0, AWREADY=1, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=146000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=155000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=0, AWVALID=0, AWREADY=0, WVALID=1, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=165000, ARVALID=1, ARREADY=0, RVALID=1, RREADY=0, AWVALID=0, AWREADY=0, WVALID=1, WREADY=0, BVALID=0, BREADY=0, done=0
+INFO: Writing 0xaabbccdd to address 0x00002000
+Time=166000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=1, WREADY=1, BVALID=0, BREADY=0, done=0
+Time=175000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=1, BVALID=0, BREADY=1, done=0
+Time=176000, ARVALID=1, ARREADY=1, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=1, done=0
+Time=185000, ARVALID=0, ARREADY=1, RVALID=0, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=1, done=0
+Time=186000, ARVALID=0, ARREADY=0, RVALID=0, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=1, done=0
+Time=195000, ARVALID=0, ARREADY=0, RVALID=0, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=0, done=0
+Time=196000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=1, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=0, done=0
+Time=205000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=0, done=0
+Time=206000, ARVALID=0, ARREADY=0, RVALID=1, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=215000, ARVALID=1, ARREADY=0, RVALID=1, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+ERROR: Expected write address 0x0000200c but got 0x00002004
+Time=216000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=1, AWREADY=1, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=225000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=1, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=226000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+Time=235000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=1, WREADY=0, BVALID=0, BREADY=0, done=0
+INFO: Writing 0x11223344 to address 0x0000200c
+Time=246000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=1, WREADY=1, BVALID=0, BREADY=0, done=0
+Time=255000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=1, BVALID=0, BREADY=1, done=0
+Time=256000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=1, done=0
+Time=266000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=1, done=0
+Time=275000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=0, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=0, done=0
+Time=285000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=1, BREADY=0, done=0
+Time=286000, ARVALID=1, ARREADY=0, RVALID=0, RREADY=0, AWVALID=1, AWREADY=0, WVALID=0, WREADY=0, BVALID=0, BREADY=0, done=0
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 864.141 ; gain = 35.820
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'master_dma_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 864.141 ; gain = 35.820
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.419 . Memory (MB): peak = 1281.789 ; gain = 2.133
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.420 . Memory (MB): peak = 1281.789 ; gain = 2.133
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1281.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 1471.598 ; gain = 597.891
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: master_dma
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2111.414 ; gain = 91.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'master_dma' [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:23]
+	Parameter READ_IDLE bound to: 3'b000 
+	Parameter READ_ADDR bound to: 3'b001 
+	Parameter READ_DATA bound to: 3'b010 
+	Parameter READ_DONE bound to: 3'b011 
+	Parameter WRITE_IDLE bound to: 3'b000 
+	Parameter WRITE_ADDR bound to: 3'b001 
+	Parameter WRITE_DATA bound to: 3'b010 
+	Parameter WRITE_RESP bound to: 3'b011 
+	Parameter WRITE_DONE bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'SYNC_FIFO' [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:227]
+WARNING: [Synth 8-5788] Register mem_reg in module SYNC_FIFO is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'SYNC_FIFO' (1#1) [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:227]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:122]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:164]
+WARNING: [Synth 8-5788] Register ARADDR_reg in module master_dma is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:134]
+WARNING: [Synth 8-5788] Register AWADDR_reg in module master_dma is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:181]
+WARNING: [Synth 8-5788] Register WDATA_reg in module master_dma is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'master_dma' (2#1) [G:/My Drive/engineering/Digital Electronics/ichip/master_dma/master_dma/master_dma.srcs/sources_1/new/master_dma.v:23]
+WARNING: [Synth 8-3331] design master_dma has unconnected port BRESP[1]
+WARNING: [Synth 8-3331] design master_dma has unconnected port BRESP[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2155.965 ; gain = 136.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2155.965 ; gain = 136.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2155.965 ; gain = 136.523
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2313.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2405.215 ; gain = 385.773
+9 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2405.215 ; gain = 385.773
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  9 23:27:42 2025...

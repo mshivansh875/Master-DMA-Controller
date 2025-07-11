@@ -1,0 +1,95 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri May  9 23:15:31 2025
+| Host         : DESKTOP-I5361HH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file master_dma_control_sets_placed.rpt
+| Design       : master_dma
+| Device       : xc7vx485t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            1 |
+|      5 |            2 |
+|     10 |            1 |
+|    16+ |           22 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              10 |            5 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             608 |          185 |
+| Yes          | No                    | Yes                    |             125 |           61 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                Enable Signal               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | done_i_1_n_0                               | reset_IBUF       |                1 |              1 |
+|  clk_IBUF_BUFG | fifo_inst/p_0_in[1]                        | FIFO_RST_reg_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | fifo_inst/FSM_onehot_write_state_reg[0][0] | reset_IBUF       |                3 |              5 |
+|  clk_IBUF_BUFG | fifo_inst/FIFO_CNT[4]_i_1_n_0              | FIFO_RST_reg_n_0 |                2 |              5 |
+|  clk_IBUF_BUFG |                                            | reset_IBUF       |                5 |             10 |
+|  clk_IBUF_BUFG | ARADDR[31]_i_1_n_0                         |                  |                6 |             32 |
+|  clk_IBUF_BUFG | WDATA[31]_i_1_n_0                          |                  |                9 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[0][31]_i_1_n_0               |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[15][31]_i_1_n_0              |                  |               10 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[14][31]_i_1_n_0              |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[2][31]_i_1_n_0               |                  |               13 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[10][31]_i_1_n_0              |                  |                9 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[3][31]_i_1_n_0               |                  |               12 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[11][31]_i_1_n_0              |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[12][31]_i_1_n_0              |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[5][31]_i_1_n_0               |                  |               11 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[13][31]_i_1_n_0              |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[1][31]_i_1_n_0               |                  |               11 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[4][31]_i_1_n_0               |                  |               15 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[6][31]_i_1_n_0               |                  |               11 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[8][31]_i_1_n_0               |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[9][31]_i_1_n_0               |                  |                8 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/mem[7][31]_i_1_n_0               |                  |               11 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/FSM_onehot_write_state_reg[1][0] |                  |               11 |             32 |
+|  clk_IBUF_BUFG | fifo_inst/p_0_in[0]                        | FIFO_RST_reg_n_0 |               33 |             36 |
+|  clk_IBUF_BUFG | write_counter[4]_i_1_n_0                   | reset_IBUF       |               12 |             37 |
+|  clk_IBUF_BUFG | fifo_inst/E[0]                             | reset_IBUF       |                9 |             37 |
++----------------+--------------------------------------------+------------------+------------------+----------------+
+
+
